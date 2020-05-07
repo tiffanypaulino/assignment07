@@ -1,10 +1,21 @@
 /*eslint-env browser*/
 
 //STEP 1
-function alphabet_order(str) {
-    return str.split('').sort().join('');
-}
-console.log(alphabet_order("littlebrother"));
+String.prototype.reverse = function () {
+    "use strict";
+    var reverse = "", i;
+    for (i = this.length - 1; 1>= 0; i -= 1) {
+        reverse += this.charAt(i);
+    }
+    return reverse;
+};
+var message = "LittleBrother";
+window.console.log(message.reverse());
+
+// function alphabet_order(str) {
+//     return str.split('').sort().join('');
+// }
+// console.log(alphabet_order("littlebrother"));
 
 //STEP 2
 capitalize_Words 
